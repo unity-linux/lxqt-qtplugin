@@ -15,7 +15,7 @@ before_install:
   - docker pull jmiahman/mageia-rpmbuilder
 
 env:
-  - MOCK_CONFIG="mageia-6-i386"
+  - MOCK_CONFIG="mageia-6-i586"
   - MOCK_CONFIG="mageia-6-x86_64"
 
 script:
@@ -25,6 +25,8 @@ script:
   - export CID=$(docker ps -l | awk '{print $1}' | grep -v -m1 'CONTAINER')
   - echo $CID
   - docker exec $CID /bin/sh -c 'cd /rpmbuild && rpmbuilder'
+  - ls
+  - cat *.log
   - find ~/ -name *.src.rpm
 
 after_success:
