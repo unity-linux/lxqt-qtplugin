@@ -3,7 +3,7 @@
 Name: lxqt-qtplugin
 Version: 0.11.1
 Release: %mkrel %rel
-Source0: http://downloads.lxqt.org/lxqt/%{version}/%{name}-%{version}.tar.xz
+Source0: https://github.com/lxde/lxqt-qtplugin/releases/download/%{version}/%{name}-%{version}.tar.xz
 Summary: Qt plugin for the LXQt desktop
 URL: http://lxqt.org/
 License: GPL
