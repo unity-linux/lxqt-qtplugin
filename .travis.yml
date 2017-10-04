@@ -5,13 +5,13 @@ services:
 install: true
 
 before_install:
-  - openssl aes-256-cbc -K $encrypted_ee8634443581_key -iv $encrypted_ee8634443581_iv -in .stuff.tar.gz.enc -out stuff.tar.gz -d
-  - file stuff.tar.gz
-  - tar xzvf stuff.tar.gz -C /tmp/
-  - eval "$(ssh-agent -s)"
-  - chmod 600 /tmp/stuff/.deploy
-  - ssh-add /tmp/stuff/.deploy
-  - mv /tmp/stuff/.host ~/.ssh/config
+        #  - openssl aes-256-cbc -K $encrypted_ee8634443581_key -iv $encrypted_ee8634443581_iv -in .stuff.tar.gz.enc -out stuff.tar.gz -d
+        #  - file stuff.tar.gz
+        #  - tar xzvf stuff.tar.gz -C /tmp/
+        #  - eval "$(ssh-agent -s)"
+        #  - chmod 600 /tmp/stuff/.deploy
+        #  - ssh-add /tmp/stuff/.deploy
+        #  - mv /tmp/stuff/.host ~/.ssh/config
   - docker pull jmiahman/mageia-rpmbuilder
 
 script:
