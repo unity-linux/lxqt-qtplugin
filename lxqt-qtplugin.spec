@@ -1,7 +1,7 @@
 %define rel 1
 
 Name: lxqt-qtplugin
-Version: 0.11.1
+Version: 0.12.0
 Release: %mkrel %rel
 Source0: https://github.com/lxde/lxqt-qtplugin/releases/download/%{version}/%{name}-%{version}.tar.xz
 Summary: Qt plugin for the LXQt desktop
